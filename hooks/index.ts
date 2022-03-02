@@ -1,1 +1,1 @@
-// hook 생성
+export { default as useScrollyY } from './useScrollyY';
