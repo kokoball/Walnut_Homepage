@@ -10,6 +10,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <GlobalStyle />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>땅콩스쿨</title>
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>
