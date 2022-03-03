@@ -1,12 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import type { NextPage } from 'next';
+import { Intro, Banner } from 'components/base';
+import { Layout } from 'components/domain';
 
-const Test = styled.div`
-  background-color: yellow;
-`;
-
-const Home = () => {
-  return <Test>Home</Test>;
+const Home: NextPage = () => {
+  return (
+    <Layout>
+      <>
+        <Intro />
+        <Banner />
+      </>
+    </Layout>
+  );
 };
-
 export default Home;

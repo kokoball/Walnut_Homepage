@@ -1,4 +1,4 @@
-import MouseSVG from 'public/images/mouse.svg';
+import Img from 'next/image';
 import * as S from './Style';
 
 export const introPhrase = ['책 읽는 재미,', '땅콩 스쿨이', '만들어줄게요!'];
@@ -13,7 +13,7 @@ const Intro = () => {
               <S.PhraseWrapper key={idx}>
                 {idx === 1 && (
                   <S.Star>
-                    <img src="./pulic/images/starIntro.png" alt="star"></img>
+                    <img src="/images/1p_star.png" alt="star"></img>
                   </S.Star>
                 )}
                 {idx === 1 ? (
@@ -29,7 +29,7 @@ const Intro = () => {
           })}
         </S.PhraseContainer>
         <S.StyledSVGWrapper>
-          <MouseSVG />
+          <Img width="44" height="45" src="/images/mouse.svg" alt="Intro-mouse" />
         </S.StyledSVGWrapper>
       </S.IntroWrapper>
     </S.IntroCotainer>

@@ -4,7 +4,7 @@ export const IntroCotainer = styled.section`
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('./assets/bgIntro.png');
+  background-image: url('./images/1p_bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@ export const IntroWrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/kidsIntro.png');
+  background-image: url('./images/1p_kids.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +51,7 @@ export const UnderLine = styled.div`
   top: 70px;
   width: 220px;
   height: 11px;
-  background-image: url('./assets/line.png');
+  background-image: url('./images/1p_line.png');
   background: no-repeat cover center;
 `;
 

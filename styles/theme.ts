@@ -1,7 +1,7 @@
 const colors = {
   primary: '#FFB100',
   text: '#333333',
-  phrase: '#FFFFFF',
+  white: '#FFFFFF',
 };
 
 const fontSize = {
