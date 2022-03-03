@@ -5,6 +5,7 @@ const useScrollyY = () => {
   const [backgroundTransparency, setBackgroundTransparency] = useState<number>(0);
   const [boxShadow, setBoxShadow] = useState<number>(0);
   const [filter, setFilter] = useState<number>(0);
+  const [autoPlay, setAutoPlay] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
     setScrollY(window.pageYOffset);
@@ -25,7 +26,13 @@ const useScrollyY = () => {
     }
   }, [scrollY]);
 
-  return { backgroundTransparency, boxShadow, filter };
+  useEffect(() => {
+    if (scrollY > 756) {
+      setAutoPlay(true);
+    }
+  }, [scrollY]);
+
+  return { backgroundTransparency, boxShadow, filter, autoPlay };
 };
 
 export default useScrollyY;
