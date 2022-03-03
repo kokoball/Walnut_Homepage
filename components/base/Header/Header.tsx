@@ -15,7 +15,7 @@ const Header = ({}) => {
         <S.HeaderNav>
           <Link href="/">
             <S.Logo filter={filter}>
-              <img src="./assets/logo.png" alt="title" />
+              <img src="./images/logo.png" alt="title" />
             </S.Logo>
           </Link>
           <S.HeaderNavList>
