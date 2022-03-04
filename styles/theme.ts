@@ -2,6 +2,8 @@ const colors = {
   primary: '#FFB100',
   text: '#333333',
   white: '#FFFFFF',
+  black: '#000000',
+  gray: '#F9F9F9',
 };
 
 const fontSize = {

@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { IMG_PATHS } from 'constants';
 
 export const Container = styled.section`
   width: 100%;
   height: 938px;
   margin: -5px 0;
-  background-image: url(${IMG_PATHS.LIVE_BACKGROUND});
+  background-image: url(./images/3p_bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
