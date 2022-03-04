@@ -1,9 +1,8 @@
 import ReactPlayer from 'react-player';
 import Img from 'next/image';
 import { Phrase } from 'components/base';
-import * as S from './Style';
-import { IMG_PATHS } from 'constants';
 import { useScrollyY } from 'hooks';
+import * as S from './Style';
 
 const LiveClass = () => {
   const { autoPlay } = useScrollyY();
@@ -20,7 +19,7 @@ const LiveClass = () => {
           ></Phrase>
         </S.PhraseWrapper>
         <S.PadWrapper>
-          <Img width="746" height="574" src={IMG_PATHS.LIVE_PAD}></Img>
+          <Img width="746" height="574" src="/images/3p_pad.png"></Img>
           <S.PadVideo>
             <ReactPlayer
               loop

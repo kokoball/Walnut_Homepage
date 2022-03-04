@@ -1,21 +1,25 @@
+import { alignLine } from 'utils/functions';
 import * as S from './Style';
 
 interface PhraseProps {
   title: string;
   content: string;
+  alignment?: boolean;
 }
 
-export const Phrase = ({ title, content }: PhraseProps) => {
+const Phrase = ({ title, content, alignment = false }: PhraseProps) => {
   return (
-    <S.Container>
+    <S.Container alignment={alignment}>
       <S.Wrapper>
-        <S.TitleBox>
-          <S.Title>{title}</S.Title>
+        <S.TitleBox alignment={alignment}>
+          <S.Title>{alignLine(title)}</S.Title>
         </S.TitleBox>
-        <S.ContentBox>
-          <S.Content>{content}</S.Content>
+        <S.ContentBox alignment={alignment}>
+          <S.Content>{alignLine(content)}</S.Content>
         </S.ContentBox>
       </S.Wrapper>
     </S.Container>
   );
 };
+
+export default Phrase;
