@@ -43,11 +43,6 @@ export const CheckWrapper = styled.div`
   padding-right: 20px;
 `;
 
-export const Check = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
 export const Book = styled.img`
   width: 170px;
   margin-top: 26px;

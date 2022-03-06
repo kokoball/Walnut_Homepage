@@ -1,4 +1,4 @@
-import { Phrase } from 'components/base';
+import { Phrase, Check } from 'components/base';
 import { useScrollyY } from 'hooks';
 import { READING_BOOKS } from 'utils';
 import * as S from './Style';
@@ -21,7 +21,9 @@ const ReadingList = () => {
         <S.BooksContainer>
           {READING_BOOKS.map((book, idx) => (
             <S.BooksWrapper key={idx}>
-              <S.CheckWrapper>{checkAnimation && <S.Check src={book.check} />}</S.CheckWrapper>
+              <S.CheckWrapper>
+                <Check checkAnimation={checkAnimation} src={book.check} wait={(idx + 1) * 500} />
+              </S.CheckWrapper>
               <S.Book src={book.book} />
             </S.BooksWrapper>
           ))}
