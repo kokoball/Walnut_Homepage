@@ -38,7 +38,7 @@ const useScrollyY = () => {
     }
   }, [scrollY]);
 
-  return { backgroundTransparency, boxShadow, filter, autoPlay, checkAnimation };
+  return { backgroundTransparency, boxShadow, filter, autoPlay, checkAnimation, handleScroll };
 };
 
 export default useScrollyY;

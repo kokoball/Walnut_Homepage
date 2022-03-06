@@ -1,8 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { Intro, Banner } from 'components/base';
-import { LiveClass, ReadingList, Diary } from 'components/domain';
-import { Layout } from 'components/domain';
+import { Layout, LiveClass, LiveAccess, ReadingList, Diary, Challenge } from 'components/domain';
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +11,9 @@ const Home: NextPage = () => {
         <Banner />
         <LiveClass />
         <ReadingList />
+        <LiveAccess />
         <Diary />
+        <Challenge />
       </>
     </Layout>
   );

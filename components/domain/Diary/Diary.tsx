@@ -14,10 +14,10 @@ const Diary = () => {
           alignment={true}
         />
         <S.ImageWrapper>
-          {DIARY_IMGS.map((img) => {
-            return <S.DiaryImg src={img} />;
+          {DIARY_IMGS.map((img, idx) => {
+            return <S.DiaryImg key={idx} src={img} />;
           })}
-          <S.Phone src={IMG_PATHS.DIARY_PHONE} />
+          <S.Phone src={IMG_PATHS.DIARY_PHONE} alt="phone" />
         </S.ImageWrapper>
       </S.DiraryWrapper>
     </S.DiaryContainer>
