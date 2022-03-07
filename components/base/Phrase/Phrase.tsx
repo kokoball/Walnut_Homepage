@@ -3,7 +3,7 @@ import * as S from './Style';
 
 interface PhraseProps {
   title: string;
-  content: string;
+  content?: string;
   alignment?: boolean;
 }
 
@@ -14,9 +14,11 @@ const Phrase = ({ title, content, alignment = false }: PhraseProps) => {
         <S.TitleBox alignment={alignment}>
           <S.Title>{alignLine(title)}</S.Title>
         </S.TitleBox>
-        <S.ContentBox alignment={alignment}>
-          <S.Content>{alignLine(content)}</S.Content>
-        </S.ContentBox>
+        {content && (
+          <S.ContentBox alignment={alignment}>
+            <S.Content>{alignLine(content)}</S.Content>
+          </S.ContentBox>
+        )}
       </S.Wrapper>
     </S.Container>
   );
