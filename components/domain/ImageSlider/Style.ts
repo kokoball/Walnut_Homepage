@@ -9,7 +9,10 @@ export const Wrapper = styled.section`
 `;
 
 export const SlideWrapper = styled.div`
+  margin-top: 20px;
+  margin-bottom: 110px;
   overflow-x: hidden;
+  overflow-y: hidden;
 `;
 
 export const SlideTrack = styled.div``;

@@ -7,7 +7,7 @@ import {
   LiveAccess,
   ReadingList,
   Diary,
-  Challenge,
+  ImageSlider,
   Feature,
 } from 'components/domain';
 
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <ReadingList />
       <LiveAccess />
       <Diary />
-      <Challenge />
+      <ImageSlider />
       <Feature />
     </Layout>
   );
