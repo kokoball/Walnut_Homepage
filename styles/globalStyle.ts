@@ -20,14 +20,21 @@ const globalStyle = createGlobalStyle`
 	}
 
 	${reset}
+	*, *::before, *::after {
+    box-sizing: border-box;
+  }
 	* {
 		box-sizing: border-box;
 		margin: 0;
 	}
 	html, body {
 		background-color: #fff;
-		font-family: 'Apple SD Gothic Neo',system-ui, Dotum,'돋움', Helvetica, sans-serif; 
+		font-family: 'Apple SD Gothic Neo',system-ui, Dotum,'돋움', Helvetica, sans-serif;
 	}
+	body {
+    width: 100%;
+    height: 100%;
+  }
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -35,17 +42,13 @@ const globalStyle = createGlobalStyle`
 	ol, ul, li {
 		list-style: none;
 	}
-	img {
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
+	
 	button {
 		display: inline-block;
 		background: transparent;
 		border: none;
 		cursor: pointer;
-	}	
+	}
 `;
 
 export default globalStyle;

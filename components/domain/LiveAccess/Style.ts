@@ -8,7 +8,6 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   max-width: 1200px;
   height: 100%;
