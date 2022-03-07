@@ -1,8 +1,7 @@
-import { Phrase } from 'components/base';
-import { SLIDE_IMGS } from 'utils';
+import { Phrase, Slide } from 'components/base';
 import * as S from './Style';
 
-const Challenge = () => {
+const ImageSlider = () => {
   return (
     <S.Wrapper>
       <Phrase
@@ -13,16 +12,10 @@ const Challenge = () => {
         alignment={true}
       />
       <S.SlideWrapper>
-        <S.SlideTrack>
-          <S.Slide>
-            {SLIDE_IMGS.map((path, idx) => {
-              return <img key={idx} src={path} alt="slide-img" />;
-            })}
-          </S.Slide>
-        </S.SlideTrack>
+        <Slide />
       </S.SlideWrapper>
     </S.Wrapper>
   );
 };
 
-export default Challenge;
+export default ImageSlider;
