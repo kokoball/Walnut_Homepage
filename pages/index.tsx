@@ -9,6 +9,7 @@ import {
   Diary,
   ImageSlider,
   Feature,
+  Ticket,
 } from 'components/domain';
 
 const Home: NextPage = () => {
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <Diary />
       <ImageSlider />
       <Feature />
+      <Ticket />
       <Footer />
     </Layout>
   );

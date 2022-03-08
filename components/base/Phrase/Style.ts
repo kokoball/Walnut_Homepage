@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div<{ alignment: boolean }>`
+export const Container = styled.div<{ alignment: boolean; nit: boolean }>`
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: ${(props) => (props.nit ? '0px' : '40px')};
   color: ${({ theme }) => theme.colors.text};
   text-align: ${(props) => props.alignment && `center`};
   word-break: keep-all;
@@ -14,9 +14,9 @@ export const Wrapper = styled.div`
   gap: 50px;
 `;
 
-export const TitleBox = styled.div<{ alignment: boolean }>`
+export const TitleBox = styled.div<{ alignment: boolean; nit: boolean }>`
   position: relative;
-  height: 142px;
+  height: ${(props) => (props.nit ? '122px' : '142px')};
   padding-right: 30px;
   ${(props) =>
     props.alignment &&
