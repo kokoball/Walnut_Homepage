@@ -1,6 +1,6 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { Intro, Banner } from 'components/base';
+import { Intro, Banner, Footer } from 'components/base';
 import {
   Layout,
   LiveClass,
@@ -22,6 +22,7 @@ const Home: NextPage = () => {
       <Diary />
       <ImageSlider />
       <Feature />
+      <Footer />
     </Layout>
   );
 };
