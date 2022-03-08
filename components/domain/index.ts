@@ -5,3 +5,4 @@ export { default as ReadingList } from './ReadingList/ReadingList';
 export { default as Diary } from './Diary/Diary';
 export { default as ImageSlider } from './ImageSlider/ImageSlider';
 export { default as Feature } from './Feature/Feature';
+export { default as Ticket } from './Ticket/Ticket';

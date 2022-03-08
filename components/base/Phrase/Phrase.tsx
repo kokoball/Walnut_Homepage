@@ -5,13 +5,14 @@ interface PhraseProps {
   title: string;
   content?: string;
   alignment?: boolean;
+  nit?: boolean;
 }
 
-const Phrase = ({ title, content, alignment = false }: PhraseProps) => {
+const Phrase = ({ title, content, alignment = false, nit = false }: PhraseProps) => {
   return (
-    <S.Container alignment={alignment}>
+    <S.Container alignment={alignment} nit={nit}>
       <S.Wrapper>
-        <S.TitleBox alignment={alignment}>
+        <S.TitleBox alignment={alignment} nit={nit}>
           <S.Title>{alignLine(title)}</S.Title>
         </S.TitleBox>
         {content && (
