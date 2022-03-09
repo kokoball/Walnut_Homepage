@@ -15,7 +15,7 @@ const globalStyle = createGlobalStyle`
 			url('../public/fonts/AppleSDGothicNeo/AppleSDGothicNeoM.woff2')
 				format('woff2'),
 			url('../public/fonts/AppleSDGothicNeo/AppleSDGothicNeoM.woff')
-				format('woff'),
+				format('woff');
 		unicode-range: U+AC00- U+D7A3, U+0030-0039;
 	}
 
@@ -45,10 +45,7 @@ const globalStyle = createGlobalStyle`
 	}
 	
 	button {
-		display: inline-block;
-		background: transparent;
-		border: none;
-		cursor: pointer;
+		all: unset;
 	}
 `;
 
