@@ -10,8 +10,10 @@ export const HeaderWrapper = styled.header<HeaderStylePropsType>`
   position: fixed;
   top: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1140px;
   height: 80px;
   padding: 0 30px;
   background-color: ${(props) => `rgba(255, 255, 255, ${props.backgroundTransparency})`};
@@ -29,7 +31,7 @@ export const HeaderNavBar = styled.div`
 
 export const HeaderNav = styled.nav`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: 50px;
 `;
