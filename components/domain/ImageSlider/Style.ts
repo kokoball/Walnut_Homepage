@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
   width: 100%;
   height: 868px;
   padding-top: 150px;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const SlideWrapper = styled.div`

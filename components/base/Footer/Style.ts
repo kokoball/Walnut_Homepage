@@ -7,6 +7,7 @@ export const Container = styled.div`
   gap: 479px;
   padding: 60px;
   overflow: hidden;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Info = styled.div`
