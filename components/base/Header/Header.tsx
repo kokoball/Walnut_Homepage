@@ -3,7 +3,7 @@ import { useScrollyY } from 'hooks';
 import { navLinks } from 'utils';
 import * as S from './Style';
 
-const Header = ({}) => {
+const Header = () => {
   const { backgroundTransparency, boxShadow, filter } = useScrollyY();
   return (
     <S.HeaderWrapper
