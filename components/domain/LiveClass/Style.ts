@@ -40,5 +40,7 @@ export const PadVideo = styled.div`
   position: absolute;
   width: 700px;
   height: 526px;
+  border-radius: 10px;
+  overflow: hidden;
   z-index: 10;
 `;

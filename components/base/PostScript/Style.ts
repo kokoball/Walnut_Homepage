@@ -174,6 +174,8 @@ export const Id = styled.span`
 `;
 
 export const Content = styled.span`
+  margin-top: 30px;
   font-size: 20px;
   line-height: 1.8;
+  text-align: center;
 `;

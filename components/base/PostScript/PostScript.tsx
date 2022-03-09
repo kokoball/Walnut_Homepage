@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { alignLine } from 'utils/functions';
 import { POSTSCRIPTS_DATA, SLIDER_DATA_LIST, SLIDE_WIDTH } from 'utils';
 import { IMG_PATHS } from '../../../constants';
 import * as S from './Style';
@@ -67,7 +68,7 @@ const PostScript = () => {
                   return (
                     <S.Slide key={idx} motion={motion}>
                       <S.Id>{postscript.id}</S.Id>
-                      <S.Content>{postscript.content}</S.Content>
+                      <S.Content>{alignLine(postscript.content)}</S.Content>
                     </S.Slide>
                   );
                 })}
