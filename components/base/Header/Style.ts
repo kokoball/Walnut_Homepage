@@ -13,7 +13,6 @@ export const HeaderWrapper = styled.header<HeaderStylePropsType>`
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1140px;
   height: 80px;
   padding: 0 30px;
   background-color: ${(props) => `rgba(255, 255, 255, ${props.backgroundTransparency})`};
