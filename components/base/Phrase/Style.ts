@@ -31,7 +31,7 @@ export const Title = styled.h2`
   position: absolute;
   font-size: 50px;
   font-weight: ${({ theme }) => theme.fontSize.thick};
-  line-height: 70px;
+  line-height: 60px;
   word-break: keep-all;
 `;
 
@@ -50,7 +50,7 @@ export const ContentBox = styled.div<{ alignment: boolean }>`
 export const Content = styled.p`
   position: absolute;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 35px;
   font-weight: ${({ theme }) => theme.fontSize.thin};
   white-space: pre-wrap;
 `;
