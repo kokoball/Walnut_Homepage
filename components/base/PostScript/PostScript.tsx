@@ -8,7 +8,6 @@ const PostScript = () => {
   const [current, setCurrent] = useState(0);
   const [motion, setMotion] = useState(true);
 
-  const userRef = useRef<HTMLImageElement>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const movePrev = () => {
@@ -55,7 +54,7 @@ const PostScript = () => {
               </S.Rotate>
             </S.RotateWrapper>
             <S.User>
-              <S.UserImg src={POSTSCRIPTS_DATA[current % 5].img} ref={userRef} />
+              <S.UserImg src={POSTSCRIPTS_DATA[current % 5].img} />
             </S.User>
           </S.Frame>
           <S.BtnPrev onClick={movePrev}>
