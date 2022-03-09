@@ -5,3 +5,4 @@ export { default as Phrase } from './Phrase/Phrase';
 export { default as Check } from './Check/Check';
 export { default as Slide } from './Slide/Slide';
 export { default as Footer } from './Footer/Footer';
+export { default as PostScript } from './PostScript/PostScript';
