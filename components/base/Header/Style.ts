@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.header<HeaderStylePropsType>`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 80px;
   padding: 0 30px;
   background-color: ${(props) => `rgba(255, 255, 255, ${props.backgroundTransparency})`};
   color: ${(props) => (props.filter > 50 ? '#333333' : ' #FFFFFF')};
@@ -24,7 +24,7 @@ export const HeaderNavBar = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 80px;
 `;
 
 export const HeaderNav = styled.nav`
@@ -37,6 +37,7 @@ export const HeaderNav = styled.nav`
 export const Logo = styled.a<HeaderStylePropsType>`
   width: 154.5px;
   height: inherit;
+  cursor: pointer;
   img {
     width: 100%;
     height: 100%;
