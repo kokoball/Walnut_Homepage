@@ -7,7 +7,7 @@ interface CheckProps {
   wait: number;
 }
 
-const Check = React.memo(({ checkAnimation, src, wait }: CheckProps) => {
+const Check = React.memo(function Check({ checkAnimation, src, wait }: CheckProps) {
   const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
