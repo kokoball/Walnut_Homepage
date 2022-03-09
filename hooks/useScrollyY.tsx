@@ -7,6 +7,7 @@ const useScrollyY = () => {
   const [filter, setFilter] = useState<number>(0);
   const [autoPlay, setAutoPlay] = useState<boolean>(false);
   const [checkAnimation, setCheckAnimation] = useState<boolean>(false);
+  const [bookmarkActive, setBookmarkActive] = useState<boolean>(false);
   const [ticketActive, setTicketActive] = useState<boolean>(false);
 
   const handleScroll = useCallback(() => {
@@ -31,6 +32,7 @@ const useScrollyY = () => {
   useEffect(() => {
     scrollY > 756 && setAutoPlay(true);
     scrollY > 1680 ? setCheckAnimation(true) : setCheckAnimation(false);
+    scrollY > 5800 ? setBookmarkActive(true) : setBookmarkActive(false);
     scrollY > 7800 ? setTicketActive(true) : setTicketActive(false);
   }, [scrollY]);
 
@@ -41,6 +43,7 @@ const useScrollyY = () => {
     autoPlay,
     checkAnimation,
     ticketActive,
+    bookmarkActive,
     handleScroll,
   };
 };

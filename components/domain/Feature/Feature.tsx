@@ -1,8 +1,9 @@
 import { Phrase } from 'components/base';
-import * as S from './Style';
 import { IMG_PATHS } from '../../../constants';
 import { alignLine } from 'utils/functions';
 import { FEATURE_ICONS } from 'utils';
+import { useScrollyY } from 'hooks';
+import * as S from './Style';
 
 interface PositionType {
   img: string;
@@ -30,12 +31,18 @@ const BOOKMARKS: PositionType[] = [
 ];
 
 const Feature = () => {
+  const { bookmarkActive } = useScrollyY();
   return (
     <S.Container>
       <Phrase title="땅콩스쿨만의 특징" alignment />
       <S.Wrapper>
         {BOOKMARKS.map(({ img, title, content }, idx) => (
-          <S.Bookmark key={idx} style={{ backgroundImage: `url(${img})` }}>
+          <S.Bookmark
+            key={idx}
+            style={{ backgroundImage: `url(${img})` }}
+            bookmarkActive={bookmarkActive}
+            idx={idx}
+          >
             <img src={FEATURE_ICONS[idx]} alt={title} width="80" height="80" />
             <S.Title>{title}</S.Title>
             <S.Content>{alignLine(content)}</S.Content>
