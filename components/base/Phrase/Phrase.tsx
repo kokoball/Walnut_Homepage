@@ -6,18 +6,19 @@ interface PhraseProps {
   content?: string;
   alignment?: boolean;
   nit?: boolean;
+  size?: boolean;
 }
 
-const Phrase = ({ title, content, alignment = false, nit = false }: PhraseProps) => {
+const Phrase = ({ title, content, alignment = false, nit = false, size = false }: PhraseProps) => {
   return (
     <S.Container alignment={alignment} nit={nit}>
-      <S.Wrapper>
+      <S.Wrapper size={size}>
         <S.TitleBox alignment={alignment} nit={nit}>
-          <S.Title>{alignLine(title)}</S.Title>
+          <S.Title size={size}>{alignLine(title)}</S.Title>
         </S.TitleBox>
         {content && (
           <S.ContentBox alignment={alignment}>
-            <S.Content>{alignLine(content)}</S.Content>
+            <S.Content size={size}>{alignLine(content)}</S.Content>
           </S.ContentBox>
         )}
       </S.Wrapper>
