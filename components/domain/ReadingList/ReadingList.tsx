@@ -16,6 +16,7 @@ const ReadingList = () => {
             교과 수록, 초등 필독 도서 등    
             아동 교육에 적합한 도서를         
             직접 선정해요!"
+            size={true}
           />
         </S.PhraseWrapper>
         <S.BooksContainer>

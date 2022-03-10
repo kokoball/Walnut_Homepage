@@ -26,11 +26,13 @@ export const ImageWrapper = styled.div`
 export const DiaryImg = styled.img`
   margin: 0 40px;
   padding: 25px;
+  width: 30%;
   &:nth-of-type(odd) {
-    margin-right: 300px;
+    margin-right: 20%;
   }
 `;
 export const Phone = styled.img`
+  width: 23%;
   position: absolute;
   top: -40px;
 `;

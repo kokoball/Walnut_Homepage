@@ -33,6 +33,13 @@ export const HeaderNav = styled.nav`
   justify-content: space-between;
   width: 100%;
   height: 50px;
+
+  @media (max-width: 900px) {
+    font-size: 11.5px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 export const Logo = styled.a<HeaderStylePropsType>`

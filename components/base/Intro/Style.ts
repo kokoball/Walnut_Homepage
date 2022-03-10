@@ -37,6 +37,7 @@ export const PhraseContainer = styled.div`
   max-width: 1140px;
   margin-top: 230px;
   padding: 0;
+  padding-left: 50px;
 `;
 
 export const PhraseWrapper = styled.div`
