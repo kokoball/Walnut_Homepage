@@ -12,7 +12,7 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"><img alt="styled--components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/><img alt="Next.js" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"> <img alt="styled--components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/> <img alt="Next.js" src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
 
 
 ## 👀 프로젝트 빌드 및 실행 방법
@@ -76,32 +76,22 @@ export const getExpiresDate = (date: number) => {
 ```
 .
 ├── README.md
-├── public
-│   ├── svgs
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── manifest.json
-│   └── robots.txt
-├── src
-│   ├── components
-│   ├── constants
-│   ├── pages
-│   ├── styles
-│   ├── utils
-│   ├── App.tsx
-│   ├── index.tsx
-│   ├── react-app-env.d.ts
-│   ├── reportWebVitals.ts
-│   └── setupTests.ts
-├── .editorconfig
-├── .eslintignore
+├── components
+├── constants
+├── hooks
+├── pages
+├── styles
+├── types
+├── utils
+├── .babelrc
 ├── .eslintrc.js
+├── .next-env.d.ts
+├── .next.config.js
+├── .eslintignore
 ├── .gitignore
 ├── .prettierrc.js
-├── babel.config.js
-├── config-overrides.js
 ├── package.json
+├── tsconfig.jest.json
 ├── tsconfig.json
-├── yarn-error.log
 └── yarn.lock
 ```
