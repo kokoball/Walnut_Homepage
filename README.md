@@ -4,7 +4,7 @@
 
 ## 🚀 정보
 
-- [배포주소 바로가기](https://walnut-homepage-lbwqtjnur-kokoball.vercel.app/)
+- [배포주소 바로가기](https://walnut-homepage-lbwqtjnur-kokoball.vercel.app/) (width = 1200px 이상 화면에 최적화되어있습니다.)
 
 <br>
 
@@ -39,34 +39,47 @@ $ yarn dev
 
 ## ✨ 구현 사항
 
-1. 도서 이미지가 무한히 반복되는 애니메이션
-- 우에서 좌로 무한 반복되는 애니메이션 구현
-2. 좌, 우 버튼을 클릭해 이동하는 무한 반복 후기 페이지
-- 각 후기들을 하나의 슬라이드로 만들고, 양 옆 버튼을 이용하여 슬라이드 이동할 수 있게 구현
-- 버튼 클릭 시, 현재 슬라이드 가리키는 상태값 증가하고 후기들을 담고 있는 슬라이드 트랙을 이동하는 방식으로 구현
+- [x] 땅콩 애니메이션 재생
+- [x] 비디오 영역 진입 시 영상 자동 재생
+  - 소리없음
+  - 반복 재생
+  - 영상 관련 인터페이스 숨김
+- [x] 영역 진입 시 체크 이미지 1,2,3, 순차적으로 재생
+- [x] 우에서 좌로 도서 이미지가 무한히 반복되는 애니메이션 구현
+- [x] 영역 진입 시 좌에서 우로 애니메이션 재생 
+- [x] 좌/우 버튼으로 통한 무한 스크롤 구현  
+- [x] 영역 진입시 버튼 내려가고 말풍선 생기는 애니메이션 구현  
 
 <br>
 
-## 🏗 프로젝트 특이사항
+## 🏗 프로젝트 상세 설명
 
-#### 1. thumbnailUrl 이미지
-- 주어진 API로(thumbnailUrl) 이미지 설정 시 403 오류가 발생하여 error 발생 시 기본 이미지 출력하도록 설정함
+#### 1. 우에서 좌로 도서 이미지가 무한히 반복되는 애니메이션 구현
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/68905615/156712336-5feb2fae-42cd-4cc4-b7d5-18445704e33c.gif" alt="애니메이션 이미지 슬라이드" height="200px">
+</div>
 
-#### 2. 파일 만료기간
-- 주어진 API로 파일 만료 기간 설정 시 파일들이 모두 유효기간이 만료되어 제대로 된 동작을 보여줄 수 없음
-- 따라서 getExpiresDate 함수에서 임의로 날짜 변경함 (src > utils), 설정 날짜는 constants에 따로 보관함
-```tsx
-export const getExpiresDate = (date: number) => {
-  // @NOTE: 임의로 날짜 변경
-  // const expiresDate = new Date(date * 1000).getTime();
-  // const nowDate = new Date().getTime();
-```
-#### 3. NotFoundPage 추가
-- 데이터가 없을 때 나타나는 페이지 추가
+- 두 개의 도서 목록 리스트를 이용한 무한 애니메이션 구현
+- left 속성을 이용하여 같은 width 크기 만큼 리스트를 좌우로 위치
+- translateX를 이용한 우에서 좌로 흐르는 동일한 애니메이션 적용
 
-#### 4. 링크 상세 화면 만료됨 전체 경로 만료됨 표시 추가
-- 데이터가 만료되었을 시 전체 경로 대신 만료됨 표시 설정
+#### 2. 좌/우 버튼으로 통한 무한 스크롤 구현
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/68905615/156715665-0f96cbd8-6fba-48cd-ae2b-ea2f8a9c7be9.gif" alt="무한 로테이션 후기.gif" width="70%" height="400px">
+</div>
 
+- 버튼 클릭시 슬라이드 상태값 증가(슬라이드 위치 이동)
+- rotate를 이용한 유저 이미지 변경 및 회전
+- translateX를 이용한 우에서 좌로 흐르는 동일한 애니메이션 적용
+- 슬라이드 하단 스크롤 : 기본 크기 20% 에서 100%까지 증가하게 구현
+
+#### 3. 영역 진입 시 체크 이미지 1,2,3, 순차적으로 재생
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/68905615/156722719-4b998785-9b6e-42b6-8dab-3f9537fa1a5e.gif" alt="체크 이미지.gif" width="70%">
+</div>
+
+- Check 컴포넌트의 wait 속성을 이용하여 각 체크 컴포넌트 마다 다른 값 setTimeout()에 전달
+- setTimeout()의 delay 값으로 순차적 렌더링 구현
 
 <br>
 <br>
