@@ -5,7 +5,7 @@
 ## 🚀 정보
 
 - [배포주소 바로가기](https://walnut-homepage-lbwqtjnur-kokoball.vercel.app/) (width = 1200px 이상 화면에 최적화되어있습니다.)
-
+- [프로젝트 회고](https://velog.io/@kokoball0/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B5%90%EC%9C%A1-%EC%86%8C%EA%B0%9C-%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B0%9C%EB%B0%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) 
 <br>
 
 ## 📝 스택
